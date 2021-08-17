@@ -1,0 +1,75 @@
+
+/*HIERARQUIA DO CSS PRIMEIRO TEMO IDS/CLASSES/ELEMENTOS*/
+div{
+    /*cometario em css */
+    
+    background-color: blue;
+    color: aliceblue;
+    font:bolder;
+    font-size: larger;
+    font-style: italic;
+    
+   
+
+}
+.Parent-container{
+    height: 120px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    /*display flex e flex box sao conceitos bem utilizados no css*/
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+.my-div1{
+    background-color: darkgreen;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* o primeiro px é a margim superior e inferior e a segunda a esquerda e direita*/
+    padding: 2px 2px;
+    margin:  4px 4px;
+    border: 2px dashed blue;
+    flex-grow: 1;
+
+}.my-div2{
+    background-color: darkgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    padding: 2px 2px;
+    margin:  4px 4px;
+    border: 2px dashed red;
+    
+}.my-div3{
+    background-color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: unset;
+    font-weight: 900;
+    padding: 2px 2px;
+    margin:  4px 4px;
+    border: 2px dashed aquamarine;
+    
+}
+/*aqui aplicamos uma proriedade aos spans*/
+span{
+    color: tomato;
+}
+/*aqui adicionamos especifcamente ao span que tiver o seletor 
+ :houver serve para aplicar o css quando o mouse selecionar ele*/
+span[seletor]:hover{
+    cursor: pointer;
+    color: black;
+    background-color: yellow;
+
+    font-style:normal;
+}
+/* o :: serve para pergarmos um semi-atributo 
+no caso pegamos a primeira letra e aumentamos o tamanh*/
+#my-id::first-letter{
+    font-size: 40px;
+}
+
+

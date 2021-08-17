@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula css</title>
+    <!--abaixo temos como conectar o css-->
+    <link rel="stylesheet" href="style.css">
+    <!--abaixo temos como conectar o js-->
+    <script src="script.js" defer></script>
+    <!--aqui criamos um css dentro do html-->
+    <!--o . usamos para relacionar classes e o # id-->>
+    <!--     o comandao @media serve para caso aconteça tal coisa ele faz tal ação, so fnciona no html
+    e nao no arquivo do css(nesse exemplo quando a tela ficar de determinado tamano ele troca de cor)-->
+    <style>
+        @media (max-width :600px) {
+            div {
+                background-color: red;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <div id="my-id">
+        Olá mundo
+    </div>
+    <p>
+        <div class="Parent-container">
+            <div class="my-div1">
+                Olá mundo 
+            </div>
+            <div class="my-div2">
+                Olá mundo 
+            </div>
+            <div class="my-div3">
+                Olá mundo <span >texto</span>
+            </div>
+        </div>
+    </p>
+    <p>
+        <span seletor>Texto</span>
+    </p>
+</body>
+</html>
